@@ -18,7 +18,7 @@
 1. Move shortcut to Desktop (and, optionally, rename shortcut)
 1. Right click on shortcut and select Properties
 1. Select Shortcut tab
-1. Copy and paste following text into Target box before the existing filename: powershell.exe -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File
+1. Copy and paste following text into Target box: powershell.exe -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File alma920.ps1
 1. (Optional) Assign shortcut keys using the Shortcut key box
 1. Change Run value to "Minimized"
 1. Click Apply
