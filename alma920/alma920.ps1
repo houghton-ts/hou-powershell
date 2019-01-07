@@ -39,7 +39,7 @@ $ListBox1.Location               = New-Object System.Drawing.Point(18,30)
 [void] $ListBox1.Items.Add('accession')
 [void] $ListBox1.Items.Add('original')
 [void] $ListBox1.Items.Add('copy')
-[void] $ListBox1.Items.Add('modified')
+[void] $ListBox1.Items.Add('enhanced')
 $ListBox1.SetSelected(0, $true) #Change number in parentheses to change the default
 
 $Label1                          = New-Object System.Windows.Forms.Label
