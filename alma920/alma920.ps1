@@ -7,7 +7,8 @@ Created: 2018-12-05 by V.M. Downey for Houghton Library Technical Services
 
 $subfielda = "`$`$a"
 $subfielde = "`$`$e HO"
-$subfieldd = "`$`$d " + (Get-Date -Format FileDate)
+#$subfieldd = "`$`$d " + (Get-Date -Format FileDate) #FileDate available for PS v. 5.0 or later
+$subfieldd = "`$`$d " + (Get-Date -Format 'yyyyMMdd')
 $subfieldf = "`$`$f " + $env:USERNAME
 $subfieldx = "`$`$x "
 
@@ -121,5 +122,6 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
     $subfieldx = ("`$`$x " + $ListBox2.SelectedItem)
     $field920 = ($subfielda, $subfieldd, $subfielde, $subfieldf, $subfieldx -join " ")}
     
-    $field920  | Set-Clipboard      
+    #$field920  | Set-Clipboard # Set-Clipboard available for PS v. 5.0 or later
+    [System.Windows.Forms.Clipboard]::SetText($field920)      
 }
