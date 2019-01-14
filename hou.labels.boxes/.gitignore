@@ -1,3 +1,5 @@
 # Script-generated files #
 ##########################
 *.tsv
+*.docx
+*.doc
